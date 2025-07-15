@@ -3,8 +3,8 @@ public class Operations2 extends Operations{
     public String Or;
     public String Not;
 
-    public String getAnd() {
-
+    public String getAnd(int a,int b) {
+        
         return And;
     }
 
