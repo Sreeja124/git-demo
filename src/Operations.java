@@ -1,12 +1,12 @@
 public class Operations {
-    public double addition;
+    public int addition;
     public double subtraction;
     public float multiplication;
     public int division;
     public String remainder;
 
-    public double getAddition(double a, int b) {
-        addition = a + (double) b;
+    public int getAddition( int a, int b) {
+        addition = a + b;
         return addition;
     }
 

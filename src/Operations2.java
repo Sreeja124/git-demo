@@ -1,22 +1,37 @@
 public class Operations2 extends Operations{
-    public String And;
-    public String Or;
+    public int And;
+    public int Or;
     public String Not;
 
-    public String getAnd(int a,int b) {
-        
-        return And;
+    Operations opp = new Operations();
+    int c = 0;
+    public int getAnd(int a,int b) {
+        if(a>0 && b>0){
+            c=opp.getAddition(a,b);
+        }
+        return c;
     }
 
-    public void setAnd(String and) {
+    public void setAnd(int and) {
         And = and;
     }
 
-    public String getOr() {
-        return Or;
+    public int getOr(int a,float b) {
+        if(a<0 || b<0){
+            System.out.println("One number is negative");
+            if(a<0){
+                a=Math.abs(a);
+            }
+            else{
+                System.out.println(b+" is negative");
+                b=Math.abs(b);
+            }
+            c= (int) opp.getSubtraction(a,b);
+        }
+        return c;
     }
 
-    public void setOr(String or) {
+    public void setOr(int or) {
         Or = or;
     }
 

@@ -27,7 +27,7 @@ public class Main {
         System.out.println(MyOperations.getDivision(12.0,4));
         System.out.println(MyOperations.getRemainder(13,4));
         String rem = MyOperations.getRemainder(12,4);
-        System.out.println(rem.getClass().getSimpleName()); */
+        System.out.println(rem.getClass().getSimpleName());
 
         //even number using for loop
         for(int i=0;i<=100;i=i+2){
@@ -80,7 +80,11 @@ public class Main {
         }
         else{
             System.out.println("Not Armstrong number");
-        }
+        }*/
+
+        Operations2 opp = new Operations2();
+        System.out.println(opp.getAnd(2,3));
+        System.out.println(opp.getOr(1,-5));
 
     }
 }// test
