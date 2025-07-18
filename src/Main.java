@@ -1,10 +1,17 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
+
+        Transactions bank = new Transactions(10000,1);
+        bank.deposit(10000);
+        bank.withdraw(5000);
+        System.out.println(bank.checkBalance());
+        System.out.println(bank.checkInterest());
+
+        /* System.out.println("Hello and welcome!");
 
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
@@ -12,7 +19,7 @@ public class Main {
             System.out.println("i = " + i);
         }
 
-       /* Laptop MyLaptop = new Laptop();
+       Laptop MyLaptop = new Laptop();
         MyLaptop.setModel("MacBook");
         MyLaptop.setBrand("Apple");
         MyLaptop.setYear(2018);
@@ -80,11 +87,11 @@ public class Main {
         }
         else{
             System.out.println("Not Armstrong number");
-        }*/
+        }
 
         Operations2 opp = new Operations2();
         System.out.println(opp.getAnd(2,3));
-        System.out.println(opp.getOr(1,-5));
+        System.out.println(opp.getOr(1,-5)); */
 
     }
-}// test
+}
