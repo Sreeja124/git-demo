@@ -1,10 +1,26 @@
-public class Transactions {
+public abstract class Transactions {
     private double balance;
     private double interest;
 
     public Transactions(double balance, double interest) {
         this.balance = balance;
         this.interest = interest;
+    }
+
+    public double getInterest() {
+        return interest;
+    }
+
+    public void setInterest(double interest) {
+        this.interest = interest;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public double withdraw(double amount) {
@@ -21,12 +37,7 @@ public class Transactions {
         return balance;
     }
 
-    public double checkBalance(){
-        return balance;
-    }
+    public abstract double checkBalance();
 
-    public double checkInterest(){
-        double interest_amount = (balance * interest * 12 )/100;
-        return interest_amount;
-    }
+    public abstract double checkInterest();
 }

@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Transactions bank = new Transactions(10000,1);
-        bank.deposit(10000);
-        bank.withdraw(5000);
-        System.out.println(bank.checkBalance());
-        System.out.println(bank.checkInterest());
+        BankAccount bank1 = new BankAccount(10000,1);
+        BankAccount bank2 = new BankAccount(10000,8);
+        bank1.deposit(10000);
+        bank2.deposit(1000000);
+        bank1.withdraw(5000);
+        System.out.println(bank1.checkBalance());
+        System.out.println(bank1.checkInterest());
+        System.out.println(bank2.checkBalance());
 
         /* System.out.println("Hello and welcome!");
 
