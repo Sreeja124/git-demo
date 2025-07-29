@@ -1,17 +1,9 @@
 public abstract class Transactions {
     private double balance;
-    private double interest;
+    protected double interest;
 
     public Transactions(double balance, double interest) {
         this.balance = balance;
-        this.interest = interest;
-    }
-
-    public double getInterest() {
-        return interest;
-    }
-
-    public void setInterest(double interest) {
         this.interest = interest;
     }
 

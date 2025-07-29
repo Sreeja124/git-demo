@@ -5,24 +5,33 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        BankAccount bank1 = new BankAccount(10000,1);
-        BankAccount bank2 = new BankAccount(10000,8);
+        //encapsulation and abstraction
+        SavingsAccount bank1 = new SavingsAccount(10000,1);
+        FixedDeposit bank2 = new FixedDeposit(1000000,8);
         bank1.deposit(10000);
-        bank2.deposit(1000000);
+        bank2.deposit(1000);
         bank1.withdraw(5000);
-        System.out.println(bank1.checkBalance());
-        System.out.println(bank1.checkInterest());
-        System.out.println(bank2.checkBalance());
+        System.out.println("Savings Account Balance "+ bank1.checkBalance());
+        System.out.println("Savings Account Interest "+ bank1.checkInterest());
+        System.out.println("Fixed Deposit Account Balance "+ bank2.checkBalance());
 
-        /* System.out.println("Hello and welcome!");
+        Hotel.Book_room room = new  Hotel.Book_room();
+        room.book("Sreeja");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
 
-       Laptop MyLaptop = new Laptop();
+        //static classes
+        Calculator cal = new Calculator();
+        System.out.println(cal.addition(2,3));
+        System.out.println(Calculator.multiplication(2,3));
+
+        //interface
+        Bills bill = new Bills();
+        Payment.pay(200);
+        bill.Return(100);
+
+
+
+      /* Laptop MyLaptop = new Laptop();
         MyLaptop.setModel("MacBook");
         MyLaptop.setBrand("Apple");
         MyLaptop.setYear(2018);
