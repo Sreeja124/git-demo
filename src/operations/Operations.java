@@ -1,3 +1,5 @@
+package operations;
+
 public class Operations {
     public int addition;
     public double subtraction;

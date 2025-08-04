@@ -1,4 +1,6 @@
-public class SavingsAccount extends Transactions{
+package oops;
+
+public class SavingsAccount extends Transactions {
 
     public SavingsAccount(double balance, double interest) {
         super(balance, interest);

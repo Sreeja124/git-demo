@@ -1,3 +1,5 @@
+package oops;
+
 public class Laptop {
     public String brand;
     public String model;

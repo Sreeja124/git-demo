@@ -1,4 +1,9 @@
-import java.util.Scanner;
+import innerclass.Hotel;
+import interfaces.Bills;
+import interfaces.Payment;
+import oops.FixedDeposit;
+import oops.SavingsAccount;
+import static_class.Calculator;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -31,7 +36,7 @@ public class Main {
 
 
 
-      /* Laptop MyLaptop = new Laptop();
+      /* oops.Laptop MyLaptop = new oops.Laptop();
         MyLaptop.setModel("MacBook");
         MyLaptop.setBrand("Apple");
         MyLaptop.setYear(2018);
@@ -39,7 +44,7 @@ public class Main {
         System.out.println("MyLaptop Brand = " + MyLaptop.getBrand());
         System.out.println("MyLaptop Year = " + MyLaptop.getYear());
 
-        Operations MyOperations = new Operations();
+        operations.Operations MyOperations = new operations.Operations();
         System.out.println(MyOperations.getAddition(2.0,3));
         System.out.println(MyOperations.getSubtraction(2,3.0f));
         System.out.println(MyOperations.getMultiplication(3,4));
@@ -101,7 +106,7 @@ public class Main {
             System.out.println("Not Armstrong number");
         }
 
-        Operations2 opp = new Operations2();
+        operations.Operations2 opp = new operations.Operations2();
         System.out.println(opp.getAnd(2,3));
         System.out.println(opp.getOr(1,-5)); */
 

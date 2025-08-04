@@ -1,3 +1,5 @@
+package operations;
+
 public class Operations2 extends Operations{
     public int And;
     public int Or;

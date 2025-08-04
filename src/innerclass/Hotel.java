@@ -1,3 +1,5 @@
+package innerclass;
+
 public class Hotel {
     String HotelName;
 

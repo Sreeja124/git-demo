@@ -1,3 +1,5 @@
+package oops;
+
 public  class FixedDeposit extends Transactions {
     public FixedDeposit(double balance, double interest) {
         super(balance, interest);
